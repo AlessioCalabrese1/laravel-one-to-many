@@ -38,7 +38,8 @@
                         {{ $post->title }}
                     </th>
                     <th>
-                        {{ $post->category }}
+                        <a href="{{ route('admin.categories.show', $post->category->id) }}" class="badge badge-pill" 
+                            style="background-color: {{ $post->category->color }}">{{ $post->category->name }}</a> 
                     </th>
                     <th>
                         <a class="btn btn-primary" href="{{ route('admin.posts.show', $post->id) }}">View</a>
