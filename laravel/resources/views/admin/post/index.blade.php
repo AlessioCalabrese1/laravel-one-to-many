@@ -29,7 +29,7 @@
                         {{ $post->id }}
                     </th>
                     <th>
-                        {{ $post->author }}
+                        {{ $post->user->name }}
                     </th>
                     <th>
                         {{ $post->title }}
