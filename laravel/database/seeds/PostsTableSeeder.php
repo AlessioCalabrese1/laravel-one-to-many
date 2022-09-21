@@ -20,6 +20,7 @@ class PostsTableSeeder extends Seeder
         for ($i=0; $i < 100; $i++) { 
             $newPost = new Post();
             $newPost->user_id = $faker->randomElement($users)->id;
+            $newPost->category_id = '1';
             $newPost->title = $faker->realText(35);
             $newPost->date = $faker->dateTimeThisYear();
             $newPost->img = $faker->imageUrl();

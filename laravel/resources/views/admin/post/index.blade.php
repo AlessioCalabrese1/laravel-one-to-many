@@ -13,10 +13,13 @@
                         Id
                     </th>
                     <th>
-                        Autho
+                        Author
                     </th>
                     <th>
                         Title
+                    </th>
+                    <th>
+                        Category
                     </th>
                     <th>
                         Options
@@ -33,6 +36,9 @@
                     </th>
                     <th>
                         {{ $post->title }}
+                    </th>
+                    <th>
+                        {{ $post->category }}
                     </th>
                     <th>
                         <a class="btn btn-primary" href="{{ route('admin.posts.show', $post->id) }}">View</a>
